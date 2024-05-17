@@ -1,0 +1,35 @@
+@import url(../../assets/css/theme.less);
+.top-header-section {
+ background-color: @primary;
+
+ .inner-top-header-section {
+    display: flex;
+    padding: 10px;
+
+    .left-section,
+    .right-section {
+      display: inline-flex;
+      width: 50%;
+      line-height: 40px;
+    }
+
+    .left-section {
+      color: @whilte;
+
+      .list {
+        margin-right: 30px;
+      }
+      
+    }
+
+    .right-section {
+      color: @blockbg;
+      justify-content: flex-end;
+
+      .label {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+ }
+}
