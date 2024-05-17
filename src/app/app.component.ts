@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavigationServiceService } from '../services/navigation-service.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'MilestonesLanding';
+  constructor(private navSrvc:NavigationServiceService){
+  }
+
+  ngOnInit(){
+    console.log(this.navSrvc.getNav()); 
+  }
 }
